@@ -1,0 +1,76 @@
+:root {
+    /* Declarar las variables */
+    --naranja: #F90;
+    --blanco: #FFF;
+    --negro: #000;
+    /* camelCase */
+    --grisOscuro: #272727;
+    --grisClaro: #BBB;
+}
+
+/* Sass variables
+    $naranja 2007
+*/
+
+body {
+    
+    background-color: var(--grisOscuro);
+    
+    background-image: url(images/pattern.jpg);
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecera,
+.contenido {
+    /* Limitamos el ancho de los elementos y los centramos en el medio de la pantalla usando márgenes automáticos 
+        margin: auto; hace lo mismo
+    */
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+}
+.cabecera h1 {
+    color: var(--naranja);
+    font-size: 20px;
+}
+
+.contenido {
+    background-color: var(--blanco);
+    border-radius: 8px 8px 0 0;
+    color: var(--negro);
+}
+
+/*
+----------------------------
+        NAVEGACIÓN
+----------------------------
+*/
+
+.nav {
+    border-radius: 8px 8px 0 0;
+    background-color: tomato;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista {
+    background-color: aquamarine;
+}
+
+.lista li {
+    background-color: pink;
+}
+
+.lista a {
+    background-color: hotpink;
+}
+
+.nav form {
+    background-color: plum;
+}
